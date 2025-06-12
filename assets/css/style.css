@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #273b5c;
+  color: #ffff;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.nav {
+  margin-top: 10px;
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.listagem {
+  width: 400px;
+  border: 2px solid #9282d9;
+  border-right: none;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.listagem-right {
+  width: 400px;
+  border: 2px solid #9282d9;
+  border-left: none;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+.home {
+  display: block;
+  height: 620px;
+  background-image: url(../image/foto-home.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: brilho infinite;
+}
+
+@keyframes brilho {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
